@@ -23,10 +23,8 @@ const fetchData = payload =>{
         dispatch(startFetching())
         axios.get(BASEURL).then(response =>{
             dispatch(fetchDataSuccess(response.data))
-            console.log(response.data)
         }).catch(error =>{
             dispatch(fetchDataFailed(error))
-            console.log(error)
         })
     }
 }

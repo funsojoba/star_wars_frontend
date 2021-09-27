@@ -3,6 +3,7 @@ import storage from "redux-persist/lib/storage";
 import persistReducer from "redux-persist/es/persistReducer";
 
 import fetchDataReducer from "./fetchDataReducer";
+import fetchMovieReducer from "./fetchMovieReducer";
 
 
 const persistConfig = {
@@ -11,7 +12,8 @@ const persistConfig = {
 }
 
 const rootReducer = combineReducers({
-    fetchDataReducer
+    fetchDataReducer,
+    fetchMovieReducer
 })
 
 
